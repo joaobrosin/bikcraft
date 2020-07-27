@@ -1,0 +1,478 @@
+/* Estilos Gerais */
+:root {
+    --color-primary: #fec63e;
+    --color-secondary: #25231e;
+    --color-background: #F0F2F5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background);
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.btn {
+    border: 3px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    color: var(--color-background);
+    border: solid 3px var(--color-background);
+}
+
+.btn.btn-preto:hover {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.subtitulo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin: 8px auto;
+}
+
+.subtitulo-interno {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin: 8px 0;
+}
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.header_menu {
+    text-align: right;
+}
+
+.header_menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.header_menu ul li a{
+    color: var(--color-secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.header_menu ul li a:hover{
+    color: var(--color-background);
+}
+
+.header_menu ul li a.menu_ativo {
+    border-bottom: 3px solid var(--color-secondary);
+}
+
+/* Intrudução */
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 92px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    color: var(--color-background);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-externo {
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: var(--color-background); 
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-background);
+    margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* Introdução interna */
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    background-size: cover;
+    text-align: center;
+    color: var(--color-background);
+    padding-top: 30px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    color: var(--color-background);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-background);
+    margin: 6px auto 10px auto;
+}
+
+/* Produtos */
+
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos_lista li {
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+.produtos_lista li img {
+    margin: 0 auto;
+}
+
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.produtos_lista li h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin: 2px auto;
+}
+
+.produtos_lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+    background-color: var(--color-secondary);
+    padding: 20px;
+}
+
+.call {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+    color: var(--color-primary);
+}
+
+.portfolio .subtitulo:after {
+    background-color: var(--color-primary);
+}
+
+.portfolio_lista li:last-child {
+    margin-top: 20px;
+}
+
+.portfolio .call p {
+    color: var(--color-background);
+}
+
+
+/* Qualidade */
+
+.qualidade {
+    padding: 60px 0;
+}
+
+.qualidade:after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto
+}
+
+.qualidade_lista {
+    padding-top: 20px;
+    overflow: auto;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.qualidade_lista li h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin: 6px auto;
+}
+
+/* quebra */ 
+
+.quebra {
+    background: url(../img/bg-footer.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+}
+
+.quebra .quote-externo {
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    padding: 20px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.footer h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary);
+    margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer_redes ul li a {
+    border: 3px solid var(--color-primary);
+    display: block;
+    padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+    border-color: var(--color-background);
+}
+
+.copy {
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 20px 0;
+}
+
+
+/* javascript */
+
+.js [data-slide] {
+    position: relative;
+}
+
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+
+.js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+/* slide portfolio */
+
+.js [data-slide-nav] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    padding: 0;
+    border-radius: 100%;
+    text-indent: -99px;
+    overflow: hidden;
+    background-color: #4e4e4e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.js [data-slide-nav] button.active {
+    background-color: var(--color-primary);
+}
+
+
+/* data-anime */
+
+.js [data-anime] {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
+
+/* mensagem para robos (nao aparece) */
+
+.nao-aparece {
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+}
+
+/* estilização mensagem form sucesso e erro */
+
+#form-sucesso {
+    color: #31aa39;
+}
+
+#form-errp {
+    color: #f64540;
+}
